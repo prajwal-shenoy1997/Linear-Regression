@@ -56,7 +56,7 @@ regressor_OLS= sm.OLS(endog=y,exog=X_opt).fit()
 regressor_OLS.summary()
 
 #Fitting the Multiple Linear Regression in the Optimal Training Set
-X_opt_train,X_opt_test=train_test_split(X_opt,test_size=02.,random_state=0)
+X_opt_train,X_opt_test=train_test_split(X_opt,test_size=0.2,random_state=0)
 regressor.fit(X_opt_train,y_train)
 
 #Predictting the Optimal Test Set Results
